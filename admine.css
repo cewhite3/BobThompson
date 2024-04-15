@@ -1,0 +1,211 @@
+/* Nav bar */
+
+nav{
+    background-color:#ECECEC;
+    box-shadow:5px 5px 5px lightgrey;
+  
+  }
+  
+  .logo {
+      width: 80px;
+  }
+  
+  #logo {
+      text-align: center;
+  }
+  .logo {
+      width: 50px;
+  }
+  
+  .usericon {
+      width: 20px;
+      margin-right: 10px;
+  }
+  
+  .navbar {
+      text-align: center;
+      background-color: white !important; 
+      border-bottom: 1px solid #ccc;
+  }
+  
+  .navbar-nav .nav-link {
+      color: black !important; /* Change text color to black */
+  }
+  
+  .dropdown-item {
+      color: black; /* Set the color to black */
+  }
+  
+  .navbar-nav .nav-item.active .nav-link {
+      font-weight: bold;
+      border-bottom: 2px solid #273884; /* Change the color and thickness as needed */
+  }
+  
+  .navbar-nav .nav-link:hover {
+      font-weight: bold;
+      border-bottom: 2px solid #273884; /* Change the color and thickness as needed */
+  }
+  
+  .navbar-nav .nav-item:hover .nav-link {
+      border-bottom: 2px solid #273884; /* Change the color and thickness as needed */
+  }
+  
+  
+  /* end nav bar*/
+
+.btn-primary {
+    background-color: #273884; /* Blue */
+    border-color: #273884; /* Blue */
+    font-family: roboto;
+    margin-left: 60px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #131F4F; /* Darker blue */
+    border-color: #131F4F; /* Darker blue */
+}
+
+h2 {
+    margin-top: 40px;
+    margin-left: 30px;
+    color: #273884;
+    font-family: Roboto;
+    font-size: 40px;
+}
+
+h3 {
+    margin-top: 40px;
+    margin-left: 85px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: Roboto;
+    padding-top: 30px;
+}
+h1 {
+    margin-top: 20px;
+    margin-left: 85px;
+    color: gray;
+    font-family: Roboto;
+    font-size: 20px;
+}
+p {
+    font-family: Roboto;
+    
+}
+
+.roboto-serif {
+    font-family: "Roboto Serif", serif;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "GRAD" 0;
+}
+
+
+.btn {
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+.btn-primary {
+    background-color: #273884;
+    border-color: #273884;
+    font-family: roboto;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #131F4F;
+    border-color: #131F4F;
+
+}
+
+
+
+
+footer {
+    background-color: #273884;
+    color: #ffffff;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+}
+
+
+
+.input-group {
+    width: 500px;
+    margin-left: 17px;
+    
+}
+
+.search-button {
+    background-image: url('9.svg');
+    background-repeat: no-repeat;
+    background-size: auto; /* or adjust as needed */
+    width: 55px; /* or adjust as needed */
+    height: 40px; /* or adjust as needed */
+    border: none;
+    padding: 0;
+}
+
+
+
+
+
+.inputbox {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: roboto;
+    color: #757575;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.dropdown-menu.dropdown-menu-start {
+        left: auto;
+        right: 0;
+    }
+
+/* Updated CSS 4/3/24 File Upload Modal*/
+
+.two {
+text-align: right;
+}
+
+#cancel, #save {
+    width: 100px;
+}
+
+#cancel {
+    background-color: white;
+        color: #131F4F;
+        border: 1px solid #131F4F;
+}
+
+.form-control {
+        height: 45px; /* Change this value to your desired height */
+    }
+/* End of New CSS */ 
+
+
+#table {
+    margin-top: 40px;
+}
+
+.file-name {
+    font-size: 12px;
+}
+
+.upload {
+    float: right;
+}
+
+#upload1 {
+    margin-top: -190px;
+    margin-left: 2000px;
+}

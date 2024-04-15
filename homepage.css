@@ -1,0 +1,295 @@
+.btn-primary {
+    background-color: #273884; /* Blue */
+    border-color: #273884; /* Blue */
+    font-family: roboto;
+    margin-left: 60px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #131F4F; /* Darker blue */
+    border-color: #131F4F; /* Darker blue */
+}
+
+h2 {
+    margin-top: 40px;
+    margin-left: 85px;
+    color: #273884;
+    font-family: Roboto;
+    font-size: 40px;
+}
+
+h3 {
+    margin-top: 40px;
+    margin-left: 85px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: Roboto;
+}
+
+p {
+    font-family: Roboto;
+}
+
+.roboto-serif {
+    font-family: "Roboto Serif", serif;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "GRAD" 0;
+}
+
+
+.logo {
+    width: 80px;
+}
+
+#logo {
+    text-align: center;
+}
+
+.btn {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.col {
+    padding: 20px;
+}
+
+.btn-primary {
+    background-color: #273884;
+    border-color: #273884;
+    font-family: roboto;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #131F4F;
+    border-color: #131F4F;
+}
+
+
+
+.top-image {
+    width: 40px;
+    position: absolute;
+    top: 40px; /* adjust top position as needed */
+    left: 50%; /* center horizontally */
+    transform: translateX(-50%); /* center horizontally */
+}
+
+.text-on-top {
+    position: absolute;
+    bottom: 10px; /* adjust bottom position as needed */
+    left: 50%; /* center horizontally */
+    transform: translateX(-50%); /* center horizontally */
+    font-size: 16px; /* adjust font size as needed */
+    color: #333; /* adjust text color as needed */
+}
+
+.white-button {
+    position: relative;
+    padding: 10px 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    color: #333; /* Text color */
+    cursor: pointer;
+}
+
+.white-button img {
+    width: 30px; /* Adjust icon size as needed */
+    vertical-align: middle;
+    margin-right: 30px; /* Add space between icon and file name */
+}
+
+.white-button .file-name {
+    vertical-align: middle;
+    color: #333; /* Text color */
+    font-size: 12px;
+}
+
+.recent {
+    margin-left: 40px;
+}
+
+.white-button img.dots {
+    margin-left: 70px !important;
+    margin-right: 0px !important;
+}
+
+footer {
+    background-color: #273884;
+    color: #ffffff;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.footer-icon {
+    position: absolute;
+    top: 1px;
+    left: 10px; /* Adjust the value to move the icon further left */
+}
+
+.logo {
+    width: 50px;
+}
+
+.usericon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.navbar {
+    text-align: center;
+    background-color: white !important; 
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar-nav .nav-link {
+    color: black !important; /* Change text color to black */
+}
+
+.dropdown-item {
+    color: black; /* Set the color to black */
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    font-weight: bold;
+}
+
+
+.navbar-nav .nav-item.active .nav-link {
+    font-weight: bold;
+    border-bottom: 2px solid #273884; /* Change the color and thickness as needed */
+}
+
+.navbar-nav .nav-link:hover {
+    font-weight: bold;
+    border-bottom: 2px solid #273884; /* Change the color and thickness as needed */
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    border-bottom: 2px solid #273884; /* Change the color and thickness as needed */
+}
+
+
+
+
+.elipses_btn {
+    width: 10px;
+    outline: none;
+    margin-left: 90px;
+}
+
+.elipses_btn::after {
+            display: none !important;
+         }
+
+/* Updated CSS 4/2/24 */
+nav{
+  background-color:#ECECEC;
+  box-shadow:5px 5px 5px lightgrey;
+
+}
+
+.rounded-rectangle {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
+    border: none;
+  outline: none;
+}
+
+h7 {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: normal;
+    position: relative;
+    left: 100px; 
+}  
+
+.inputbox {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: roboto;
+    color: #757575;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.dropdown-menu.dropdown-menu-start {
+        left: auto;
+        right: 0;
+    }
+
+/* Updated CSS 4/3/24 File Upload Modal*/
+
+.two {
+text-align: right;
+}
+
+#cancel, #save {
+    width: 100px;
+}
+
+#cancel {
+    background-color: white;
+        color: #131F4F;
+        border: 1px solid #131F4F;
+}
+
+.form-control {
+        height: 45px; /* Change this value to your desired height */
+    }
+
+/* CSS for aligning bottom buttons */
+.button-container {
+    text-align: right;
+}
+
+/* Adjust spacing between buttons if needed */
+.button-container button {
+    margin-left: 10px;
+}
+
+
+.button-container .btn-save-changes {
+    color: #273884; /* Blue color for text */
+    background-color: #fff; /* White background */
+    border: 2px solid #273884; /* Blue border */
+}
+
+/* Hover effect for Save Changes button */
+.button-container .btn-save-changes:hover {
+    color: #fff; /* White text on hover */
+    background-color: #273884; /* Blue background on hover */
+}
+
+
+.form-label {
+    margin-bottom: -10px; /* Adjust as needed */
+}
+
+.form-control {
+    margin-bottom: 0px; /* Adjust as needed */
+}
+
+
+/* End of New CSS */ 

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Library</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <!--filter CSS-->
+  <link href="admine.css" rel="stylesheet">
+<!-- Font -->  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+ <!-- Start nav -->
+<nav class="navbar navbar-expand-lg bg-success navbar-dark">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">
+            <img class="logo" src="Document.png" alt="Madison County logo">
+        </a>
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"  aria-label="Toggle navigation"
+                aria-controls="navbarSupportedContent" aria-expanded="false" data-mdb-target="#navbarSupportedContent">
+            <i class="fas fa-bars"></i>
+        </button>
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"> <!-- Add 'active' class to the active link -->
+                    <a class="nav-link text-white" href="../index.html">Home</a>
+                </li>
+                <!-- Link -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../analytics/analytics.html">Analytics</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="../admine/admine.html">File Library</a>
+                </li>
+            </ul>
+            <!-- Dropdown for user -->
+            <div class="navbar-nav ml-auto">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="8.png" alt="User icon image" class="usericon">
+                            Bob Thompson
+                        </a>
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                             <li>
+                                <a class="dropdown-item" href="../userlib/userlibrary.html">Manage Users</a>
+                            </li>
+                            <li>
+                                <!-- Open Change Password Modal on Click -->
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#passwordModal">Change Password</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Log out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- End Navbar -->
+
+<!-- Main Contnet -->
+
+<div class="container ">
+  <div class="row">
+      <h2>File Library</h2>
+    </div>
+
+    <div>
+      <br>
+    </div>
+    <div>
+      <br>
+    </div>
+  
+<!-- Modal -->
+<div class="container content-right">
+
+           <div class="upload">
+            <button type="button" class="btn btn-light" id="upload1" data-toggle="modal" data-target="#uploadFilesModal">
+                <img src="4.svg" alt="Image" style="width: 20px; height: 20px;"> Upload Files
+            </button>
+        </div>
+      </div>
+    </div>
+
+          <div class="modal fade" id="uploadFilesModal" tabindex="-1" role="dialog" aria-labelledby="uploadFilesModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="uploadFilesModalLabel">Upload Files</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <!-- Header -->
+        <div class="heading">
+        </div>
+      <!-- End Header -->
+
+
+<div class="mb-3">
+  <label for="formFile" class="form-label"></label>
+  <input class="form-control" type="file" id="formFile">
+</div>
+
+<div class="mb-3">
+        <span asp-validation-for="DataDesc" class="input-error"></span>
+
+        <select asp-for="Department" class="inputbox">
+            <option value="">Choose Department</option>
+            <option value="department1">Administrative Efficiency </option>
+            <option value="department2">Economic Development</option>
+            <option value="department3">Personal Policy and Administration</option>
+            <option value="department4">Spending Levels and Projections</option>
+            <option value="department5">Tax Base Assesment</option>
+        </select>
+        <span asp-validation-for="Department" class="input-error"></span>
+    </div>
+
+<div>
+  <br>
+  <br>
+</div>
+
+  <div class="container two">
+                <button class="btn btn-primary" type="button" id="cancel">Cancel</button>
+
+                <button class="btn btn-primary" type="button" id="save">Save</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- End Modal -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+<!-- Search Bar --> 
+            <div class="input-group">
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search">
+                <button type="button" class="btn btn-outline-light search-button" data-mdb-ripple-init></button>
+            </div>
+          </div><!--col-8-->
+<!-- End Search Bar -->
+
+<!-- Dropdown button -->
+  <div class="col-md-6">
+<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Filter By Department
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Administrative Efficiency</a></li>
+    <li><a class="dropdown-item" href="#">Economic Development</a></li>
+    <li><a class="dropdown-item" href="#">Personal Policy and Administration</a></li>
+    <li><a class="dropdown-item" href="#">Spending Levels and Projections</a></li>
+    <li><a class="dropdown-item" href="#">Tax Base Assesment</a></li>
+  </ul>
+</div>
+</div><!-- col -->
+
+<!-- end dropdown -->
+</div><!-- row -->
+</div><!-- container -->
+
+
+
+ <!-- Table -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12"> <!-- Adjust the column size as needed -->
+      <div class="container" id="table">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Department</th>
+              <th scope="col">Date</th>
+              <th scope="col">File Size</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">
+                <img src="7.png" alt="PDF Icon" width="25px">
+                <span class="file-name">CSV SAMPLE DATA.csv</span>
+              </th>
+              <td>Administrative Efficiency</td>
+              <td>04/04/2024</td>
+              <td>1 MB</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <img src="8.svg" alt="PDF Icon" width="25px">
+                <span class="file-name">CSV SAMPLE DATA.pdf</span>
+              </th>
+              <td>Administrative Efficiency</td>
+              <td>04/04/2024</td>
+              <td>1 MB</td>
+            </tr>
+
+              <tr>
+              <th scope="row">
+                <img src="8.svg" alt="CSV Icon" width="25px">
+                <span class="file-name">CSV SAMPLE DATA.PDF</span>
+              </th>
+              <td>Administrative Efficiency</td>
+              <td>04/04/2024</td>
+              <td>1 MB</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> <!-- End table container -->
+    </div> <!-- End column -->
+  </div> <!-- End row -->
+  <!-- End Table -->
+</div> <!-- End outer container -->
+
+
+<!-- Change Password Modal -->
+<div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passwordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="passwordModalLabel">Change Password</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Change Password Form -->
+                <form id="changePasswordForm">
+                    <div class="form-group">
+                        <label for="currentPassword">Current Password</label>
+                        <input type="password" class="form-control" id="currentPassword" placeholder="Enter current password">
+                    </div>
+                    <div class="form-group">
+                        <label for="newPassword">New Password</label>
+                        <input type="password" class="form-control" id="newPassword" placeholder="Enter new password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm New Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm new password">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-save-changes" data-dismiss="modal">Save Changes</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+          
+<div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+
+   
+<!-- End Files -->
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-text">
+          &copy; 2024 Cyber Solutions
+    </div>
+  </div>
+</div>
+</div>
+</footer>
+<!-- End Footer -->
+
+
+             
+
+  <!-- Bootstrap JS (Optional, only if you need it) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/2ce432a8a0.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Library</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="userlibrary.css">
+</head>
+<body>
+
+<!-- Start nav -->
+<nav class="navbar navbar-expand-lg bg-success navbar-dark">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">
+            <img class="logo" src="Document.png" alt="Madison County logo">
+        </a>
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"  aria-label="Toggle navigation"
+                aria-controls="navbarSupportedContent" aria-expanded="false" data-mdb-target="#navbarSupportedContent">
+            <i class="fas fa-bars"></i>
+        </button>
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"> <!-- Add 'active' class to the active link -->
+                    <a class="nav-link text-white" href="../index.html">Home</a>
+                </li>
+                <!-- Link -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../analytics/analytics.html">Analytics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../admine/admine.html">File Library</a>
+                </li>
+            </ul>
+            <!-- Dropdown for user -->
+            <div class="navbar-nav ml-auto">
+                <ul class="navbar-nav">
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="8.png" alt="User icon image" class="usericon">
+                            Bob Thompson
+                        </a>
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="../userlib/userlibrary.html">Manage Users</a>
+                            </li>
+                            <li>
+                                <!-- Open Change Password Modal on Click -->
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#passwordModal">Change Password</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Log out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- End Navbar -->
+
+<div>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+<!-- Upload Excel File: Modal 1 -->
+<div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="uploadModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="uploadModalLabel">Create New User</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+
+<!-- Modal Content-->
+
+
+    <!-- Form -->
+        <form method="post" enctype="multipart/form-data" asp-action="UploadData">
+    
+
+    <div class="mb-2">
+        <p class="input-label"> First Name </p>
+        <input type="text" asp-for="FileType" class="inputbox" placeholder="Enter First Name" />
+        <span asp-validation-for="FileType" class="input-error"></span>
+    </div>
+    
+    <div class="mb-2">
+        <p class="input-label"> Last Name </p>
+        <input type="text" asp-for="Subject" class="inputbox" placeholder="Enter Last Name" />
+        <span asp-validation-for="Subject" class="input-error"></span>
+    </div>
+
+    <div class="mb-2">
+        <p class="input-label"> Username </p>
+        <input type="text" asp-for="Subject" class="inputbox" placeholder="Enter Username" />
+        <span asp-validation-for="Subject" class="input-error"></span>
+    </div>
+    
+    <div class="mb-2">
+        <p class="input-label"> Password </p>
+        <input type="text" asp-for="DataDesc" class="inputbox" placeholder="Create Password"/>
+        <span asp-validation-for="DataDesc" class="input-error"></span>
+    </div>
+    <div class="mb-2">
+        <p class="input-label"> Confirm Password </p>
+        <input type="text" asp-for="DataDesc" class="inputbox" placeholder="Enter Password Again"/>
+        <span asp-validation-for="DataDesc" class="input-error"></span>
+    </div>
+    <div class="mb-2">
+        <p class="input-label"> Email </p>
+        <input type="text" asp-for="DataDesc" class="inputbox" placeholder="Enter Email"/>
+        <span asp-validation-for="DataDesc" class="input-error"></span>
+    </div>
+    <div class="mb-2">
+        <p class="input-label"> Phone Number </p>
+        <input type="text" asp-for="DataDesc" class="inputbox" placeholder="Enter Phone Number"/>
+        <span asp-validation-for="DataDesc" class="input-error"></span>
+    </div>
+    <div class="mb-2">
+        <p class="input-label"> Address </p>
+        <input type="text" asp-for="DataDesc" class="inputbox" placeholder="Enter Address"/>
+        <span asp-validation-for="DataDesc" class="input-error"></span>
+    </div>
+    </form>
+    <!-- End Form -->
+
+    <!-- Bottom Buttons -->
+     <div class="container two">
+                <button class="btn btn-primary" type="button" id="cancel">Cancel</button>
+
+                <button class="btn btn-primary" type="button" id="save">Save</button>
+            </div>
+    <!-- End Bottom Buttons -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Title --> 
+
+<div class="container custom-container mt-4">
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <h2>User Library</h2>
+        </div>
+
+
+        <div class="col-md-6 text-right"> 
+
+<!-- Button Modal is Attached To --> 
+
+<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#uploadModal">
+  Create New User
+</button>  
+</div>
+<!-- Rest of your content -->
+
+<!-- Table -->
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th class="bold" class= "row-color">Last Name</th>
+            <th>First Name</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Account Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>One</td>
+            <td>User</td>
+            <td>userone</td>
+            <td>passwordone</td>
+            <td>firstuser@gmail.com</td>
+            <td>(123) 456-7890</td>
+            <td>123 Best Street Anywhere, VA 12345</td>
+            <td>
+              <!-- Edit button -->
+              <a href="#" class="btn btn-link edit-btn">Edit</a>
+              <!-- Delete button -->
+              <a href="#" class="btn btn-link delete-btn">Delete</a>
+            </td>
+
+          </tr>
+          <!-- Add more rows here if needed -->
+          <tr>
+            <td>Two</td>
+            <td>User</td>
+            <td>usertwo</td>
+            <td>passwordtwo</td>
+            <td>seconduser@gmail.com</td>
+            <td>(098) 765-4321</td>
+            <td>321 Best Street Anywhere, VA 54321</td>
+            <td>
+              <!-- Edit button -->
+              <a href="#" class="btn btn-link edit-btn">Edit</a>
+              <!-- Delete button -->
+              <a href="#" class="btn btn-link delete-btn">Delete</a>
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+</div>
+<!-- Change Password Modal -->
+<div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passwordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="passwordModalLabel">Change Password</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Change Password Form -->
+                <form id="changePasswordForm">
+                    <div class="form-group">
+                        <label for="currentPassword">Current Password</label>
+                        <input type="password" class="form-control" id="currentPassword" placeholder="Enter current password">
+                    </div>
+                    <div class="form-group">
+                        <label for="newPassword">New Password</label>
+                        <input type="password" class="form-control" id="newPassword" placeholder="Enter new password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm New Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm new password">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-save-changes" data-dismiss="modal">Save Changes</button>
+                <button type="button" class="btn btn-primary" id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-text">
+          &copy; 2024 Cyber Solutions
+    </div>
+  </div>
+</div>
+</div>
+</footer>
+<!-- End Footer -->
+
+
+  <!-- Bootstrap JS (Optional, only if you need it) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/2ce432a8a0.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

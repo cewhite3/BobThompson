@@ -1,0 +1,166 @@
+/* Navbar */
+.navbar {
+    box-shadow: 5px 5px 5px lightgrey;
+    text-align: center;
+      background-color: white !important; 
+      border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    width: 50px;
+}
+
+.usericon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: black !important;
+}
+
+.dropdown-item {
+    color: black;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item:hover .nav-link {
+    font-weight: bold;
+    border-bottom: 2px solid #273884;
+}
+
+/* Submit Button */
+.btn-primary { 
+    background-color: #273884 !important;
+    border-color: #273884 !important;
+    font-family: Roboto;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #131F4F !important;
+    border-color: #131F4F !important;
+}
+
+/* Create New User Button */
+.btn-primary {
+    margin-top: -115px;
+}
+
+/* Titles */
+h2 {
+    margin-top: -70px;
+    margin-left: 0px;
+    color: #273884;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3 {
+    margin-top: 40px;
+    margin-left: 85px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: Roboto;
+}
+
+/* General Styling */
+p {
+    font-family: Roboto;
+}
+
+.custom-container {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-label {
+    margin-bottom: 0; 
+}
+
+.inputbox {
+    width: 450px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Roboto;
+    color: #757575;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Footer */
+.footer {
+    background-color: #273884;
+    color: #ffffff;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+/* Other Styles */
+.rounded-rectangle {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
+    border: none;
+    outline: none;
+}
+
+.custom-edit-btn {
+    color: #272884;
+}
+
+.delete-btn {
+    color: #8B0000; 
+}
+
+.dropdown-menu.dropdown-menu-start {
+    left: auto;
+    right: 0;
+}
+
+.inputbox {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: roboto;
+    color: #757575;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Updated CSS 4/3/24 File Upload Modal*/
+
+.two {
+text-align: right;
+}
+
+#cancel, #save {
+    width: 100px;
+    margin-top: 20px;
+}
+
+#cancel {
+    background-color: white !important;
+        color: #131F4F !important;
+        border: 1px solid #131F4F !important;
+}
+
+#submit {
+    margin-top: -1px;
+}
+/* End of New CSS */ 
